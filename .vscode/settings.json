@@ -1,0 +1,18 @@
+{
+  "rest-client.environmentVariables": {
+    "$shared": {
+      "localHost": "http://localhost:3000"
+    },
+
+    "LocalEnv": {
+      "host": "http://localhost:3000"
+    },
+
+    "DevEnv": {
+      "host": "dev.http://localhost:3000"
+    }
+  },
+  "rest-client.defaultHeaders": {
+    "User-Agent": "vscode-restclient"
+  }
+}

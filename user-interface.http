@@ -1,0 +1,24 @@
+### 회원 가입 요청
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "name": "임은하",
+  "email": "dmsgk1559@naver.com",
+  "password": "123456"
+}
+
+### 이메일 인증 요청
+POST {{host}}/users/email-verify?signupVerifyToken=a1b2c3
+
+### 로그인 요청
+POST {{host}}/users/login
+Content-Type: application/json
+
+{
+  "email": "dmsgk1559@naver.com",
+  "password": "123456"
+}
+
+### 회원 정보 요청
+GET {{host}}/users/1

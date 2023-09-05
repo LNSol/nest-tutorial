@@ -1,0 +1,45 @@
+# @host = http://localhost:3000
+# LocalEnv.host = localhost:3000
+@sub = http://api.localhost:3000
+
+GET {{host}}
+
+###
+
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "name": "임은하",
+  "email": "dmsgk1559@gmail.com",
+  "password": "a123456"
+}
+
+###
+
+DELETE {{host}}/users/1
+
+###
+GET {{host}}/services
+
+###
+GET http://v1.api.localhost:3000
+
+###
+
+GET {{host}}/orders
+
+###
+
+GET {{host}}/products
+
+###
+
+GET {{host}}/platform/buy
+
+###
+
+GET {{host}}/db-host-from-config
+
+###
+GET {{host}}/env-test
