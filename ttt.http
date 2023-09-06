@@ -41,5 +41,10 @@ GET {{host}}/platform/buy
 
 GET {{host}}/db-host-from-config
 
-###
+### 
+
 GET {{host}}/env-test
+
+###
+
+GET {{host}}/all?offset=undefined
